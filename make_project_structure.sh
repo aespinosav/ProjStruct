@@ -103,7 +103,7 @@ echo "Data/" >> $project_name/.gitignore
 
 git -C $project_name add README.md
 git -C $project_name commit -m \
-    "Initial project commit. Dir is structure set up, please use it..."
+    "Initial project commit. Dir structure is set up, please use it..."
 
 # Goodbye
 echo ""
