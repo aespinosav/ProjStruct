@@ -67,10 +67,13 @@ mkdir $project_name/Writing
 
 # Make README files for project and Data dir
 
-echo "# $project_name"  > $project_name/README.md
-
 echo "This directory (and any subdir) is not under version control" \
     > $project_name/CodeRepo/$project_name/README.md
+
+echo "# $project_name" > $project_name/README.md
+
+echo -e "\n## Project directory structure\n" >> $project_name/README.md
+tree $project_name >> $project_name/README.md
 
 # Initiate Git repository (and initial commit with README file)
 
