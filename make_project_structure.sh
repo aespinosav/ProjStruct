@@ -59,7 +59,6 @@ mkdir $project_name
 # Make subdirs
 
 mkdir $project_name/Data
-mkdir $project_name/Data/README.md
 mkdir $project_name/Outputs
 mkdir $project_name/Figures
 mkdir $project_name/Scratch
@@ -75,7 +74,7 @@ mkdir $project_name/Writing
 # Make README files for project and Data dir
 
 echo "This directory (and any subdir) is not under version control" \
-    > $project_name/CodeRepo/$project_name/README.md
+    > $project_name/Data/README.md
 
 echo "# $project_name" > $project_name/README.md
 
