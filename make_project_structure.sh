@@ -76,6 +76,9 @@ mkdir $project_name/Writing
 echo "This directory (and any subdir) is not under version control" \
     > $project_name/Data/README.md
 
+echo "# Code repository for $project_name" \
+    > $project_name/CodeRepo/$project_name/README.md
+
 echo "# $project_name" > $project_name/README.md
 
 # If tree command exists, add directory tree to README
@@ -99,9 +102,9 @@ echo ".gitignore" > $project_name/.gitignore
 echo "Data/" >> $project_name/.gitignore
 
 git -C $project_name add README.md
-git -C $project_name commit -m "Initial commit (with README), please use it..."
+git -C $project_name commit -m \
+    "Initial project commit. Dir is structure set up, please use it..."
 
 # Goodbye
-
 echo ""
 echo "Project structure has been set up successfully!... Enjoy."
