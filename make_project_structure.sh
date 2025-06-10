@@ -79,8 +79,14 @@ echo "This directory (and any subdir) is not under version control" \
 
 echo "# $project_name" > $project_name/README.md
 
-echo -e "\n## Project directory structure\n" >> $project_name/README.md
-tree $project_name >> $project_name/README.md
+# If tree command exists, add directory tree to README
+if [ -x "$(command -v tree)" ]; then
+
+    echo -e "\n## Project directory structure (at init)\n" \
+        >> $project_name/README.md
+
+    tree $project_name >> $project_name/README.md
+fi
 
 # Initiate Git repository (and initial commit with README file)
 
