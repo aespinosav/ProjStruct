@@ -36,6 +36,13 @@
 # keep developing the script as I use it in my projects to be functional.
 #
 
+# Check that a project name is passed
+
+if [ $# -eq 0 ]; then
+    echo "Error: No project name passed as argument for directory creation"
+    exit 1
+fi
+
 project_name=$1
 
 echo "Making directory structure for project: $project_name ..."
