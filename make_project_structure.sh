@@ -34,7 +34,7 @@
 # The idea is to make it easy to have a consistent setup to encourage myself to
 # be rigorourous, consistent, and produce reproducible science. I will try to
 # keep developing the script as I use it in my projects to be functional.
-#
+# .
 
 # Check that a project name is passed
 
