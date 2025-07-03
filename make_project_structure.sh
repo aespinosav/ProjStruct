@@ -64,7 +64,6 @@ mkdir $project_name/Figures
 mkdir $project_name/Scratch
 mkdir $project_name/CodeRepo
 mkdir $project_name/CodeRepo/$project_name
-mkdir $project_name/CodeRepo/$project_name/code
 mkdir $project_name/CodeRepo/$project_name/testing
 mkdir $project_name/Notebooks
 mkdir $project_name/Scripts
